@@ -1,5 +1,7 @@
 # 0.96" RGB OLED (SSD1357) for ESP-32D
 
+Driver API library for 0.96" RGB OLED (SSD1357) to ESP32-WROOM-32D with adapter for Adafruit GFX Library
+
 4-wire SPI only. Leave the module's BS jumper at the factory default.
 
 | OLED | ESP-32D GPIO |
@@ -13,9 +15,3 @@
 | RST | 16 |
 
 Logic and power must both be 3.3V.
-
-```bash
-cd ESP32/OLED_0in96_rgb
-pio run -t upload
-pio device monitor
-```
