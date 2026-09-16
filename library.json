@@ -1,0 +1,22 @@
+{
+  "name": "OLED_096_RGB",
+  "version": "1.0.0",
+  "description": "SSD1357 driver for the Waveshare 0.96inch RGB OLED (64x128) on ESP-32D",
+  "keywords": "oled, ssd1357, waveshare, esp32, spi",
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "headers": ["OLED_096_RGB.h", "OLED_096_GFX.h"],
+  "dependencies": {
+    "adafruit/Adafruit GFX Library": "1.11.13",
+    "adafruit/Adafruit BusIO": "*"
+  },
+  "build": {
+    "includeDir": "include",
+    "srcDir": "src",
+    "srcFilter": [
+      "+<OLED_096_RGB.cpp>",
+      "+<OLED_096_GFX.cpp>",
+      "-<main.cpp>"
+    ]
+  }
+}
